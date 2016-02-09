@@ -4,7 +4,7 @@ RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/reposito
     rm -f /var/cache/apk/* && \
     echo "extension=redis.so" >/etc/php/conf.d/redis.ini && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
-    mkdir mkdir /run/apache2/ && chown -R apache:apache mkdir /run/apache2/
+    mkdir /run/apache2/ && chown -R apache:apache mkdir /run/apache2/
 
 RUN cd /var/www/localhost && \
     curl -q  https://codeload.github.com/sasanrose/phpredmin/tar.gz/v1.0.0 > phpredmin-1.0.0.tar.gz && \
