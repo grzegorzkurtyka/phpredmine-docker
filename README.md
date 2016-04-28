@@ -1,5 +1,5 @@
 # phpredmine-docker
-Alpine based image for PHPRedmine redist web frontend
+Alpine based image for PHPRedmine redis web frontend
 
 Usage: 
 Start redis container: 
