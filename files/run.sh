@@ -26,4 +26,4 @@ done
 
 echo "[i] Starting daemon..."
 # run apache httpd daemon
-httpd -D FOREGROUND
+exec httpd -D FOREGROUND
