@@ -1,6 +1,6 @@
 FROM alpine:3.4
 RUN echo "http://dl-3.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories
-RUN apk --update add php5-apache2 curl php5-cli php5-json php5-phar php5-openssl php5-redis && \
+RUN apk --update add redis php5-apache2 curl php5-cli php5-json php5-phar php5-openssl php5-redis && \
     rm -f /var/cache/apk/* && \
     echo "extension=redis.so" >/etc/php5/conf.d/redis.ini && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
